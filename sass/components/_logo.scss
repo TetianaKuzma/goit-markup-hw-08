@@ -1,20 +1,29 @@
 .header__logo {
-	margin-right: 93px;
+  margin-right: 0;
 
-	font-family: "Raleway", sans-serif;
-	@include font (26px, 700, 1.19, 0.03em);
-	color: var(--secondary-text-color);
+  font-family: "Raleway", sans-serif;
+  @include font(24px, 700, 1.17, 0.03em);
+  color: var(--secondary-text-color);
+
+  @include tablet {
+    margin-right: 88px;
+  }
+
+  @include desktop {
+    margin-right: 93px;
+    @include font(26px, 700, 1.19, 0.03em);
+  }
 }
 
 .header__logo--blue {
-	color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .footer__logo {
-	display: flex;
-	color: #ffffff;
-	margin-bottom: 20px;
+  display: flex;
+  color: #ffffff;
+  margin-bottom: 20px;
 
-	font-family: "Raleway", sans-serif;
-	@include font (26px, 700, 1.19, 0.03em);
+  font-family: "Raleway", sans-serif;
+  @include font(26px, 700, 1.19, 0.03em);
 }

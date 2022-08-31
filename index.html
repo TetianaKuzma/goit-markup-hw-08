@@ -1,583 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>WebStudio</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-		<link rel="stylesheet" href="./css/main.min.css">
-	</head>
-	<body>
-		<!-- Site nav -->
-		<header class="header">
-			<div class="container">
-				<div class="header__overlay">
-					<!-- prettier-ignore -->
-					<a lang="en" href="./index.html" class="link logo header__logo">
-						<span class="header__logo--blue">Web</span>Studio
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Site nav -->
+    <header class="header">
+      <div class="container">
+        <div class="header-overlay">
+          <nav class="navigation">
+            <!-- prettier-ignore -->
+            <a lang="en" href="./index.html" class="link logo header__logo">
+					<span class="header__logo--blue">Web</span>Studio
+				  </a>
+            <ul class="list navigation__list">
+              <li class="navigation__item">
+                <a href="./index.html" class="link current navigation__link"
+                  >Studio</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="link navigation__link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="" class="link navigation__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="list contacts-list">
+            <li class="contacts-list__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link contacts-list__link"
+              >
+                <svg class="mail contacts-list__icon">
+                  <use
+                    href="./images/icons.svg#icon-envelope"
+                    width="16"
+                    height="12"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-list__item">
+              <a href="tel:+380961111111" class="link contacts-list__link">
+                <svg class="phone contacts-list__icon">
+                  <use
+                    href="./images/icons.svg#icon-smartphone"
+                    width="10"
+                    height="16"
+                  ></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="menu-open"
+          type="button"
+          arial-label="open mob menu"
+          data-menu-open
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button class="menu-close" type="button">
+              <svg class="menu-close__btn">
+                <use
+                  href="./images/icons.svg#icon-close-mob-menu"
+                  width="40"
+                  height="40"
+                ></use>
+              </svg>
+            </button>
+            <nav class="mob-menu__nav">
+              <ul class="list mob-menu__list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="link current mob-menu__link"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="link mob-menu__link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="" class="link mob-menu__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="list mob-contacts-list">
+              <li class="mob-contacts-list__item">
+                <a
+                  href="tel:+380961111111"
+                  class="link mob-contacts-list__link mob-contacts-list__link--tel"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link mob-contacts-list__link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list mob-soc-list">
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link mob-soc-list__link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link mob-soc-list__link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link mob-soc-list__link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link mob-soc-list__link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Effective solutions for your business</h1>
+          <button type="button" class="btn hero__btn" data-modal-open>
+            Service order
+          </button>
+        </div>
+      </section>
+
+      <!-- Values -->
+      <section class="value">
+        <div class="container">
+          <h2 class="visually-hidden">Values</h2>
+          <ul class="value__list list">
+            <li class="value__item antenna">
+              <h4 class="value__name">Attention to details</h4>
+              <p class="value__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perferendis repellendus et nobis. Sed delectus quis reiciendis.
+              </p>
+            </li>
+            <li class="value__item clock">
+              <h4 class="value__name">Punctuality</h4>
+              <p class="value__text">
+                Facilis dolores ipsam ea sapiente aut saepe. Doloremque quis aut
+                laborum magnam voluptatem laudantium?
+              </p>
+            </li>
+            <li class="value__item diagram">
+              <h4 class="value__name">Planing</h4>
+              <p class="value__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda perspiciatis totam facere cum fugit.
+              </p>
+            </li>
+            <li class="value__item astronaut">
+              <h4 class="value__name">Modern technology</h4>
+              <p class="value__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                fugiat suscipit eveniet quod!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Activities -->
+      <section class="activities">
+        <div class="container">
+          <h2 class="title activities__title">Our activities</h2>
+          <ul class="list activities__list">
+            <li class="activities__item">
+              <div class="activities__wrap">
+                <img
+                  srcset="
+                    ./images/main-page-img1.jpg    1x,
+                    ./images/main-page-img1-2x.jpg 2x
+                  "
+                  src="./images/main-page-img1.jpg"
+                  alt="Keyboadr and iPad"
+                />
+                <p class="activities__text">Desctop apps</p>
+              </div>
+            </li>
+            <li class="activities__item">
+              <div class="activities__wrap">
+                <img
+                  srcset="
+                    ./images/main-page-img2.jpg    1x,
+                    ./images/main-page-img2-2x.jpg 2x
+                  "
+                  src="./images/main-page-img2.jpg"
+                  alt="iPhone and design"
+                />
+                <p class="activities__text">Mobile apps</p>
+              </div>
+            </li>
+            <li class="activities__item">
+              <div class="activities__wrap">
+                <img
+                  srcset="
+                    ./images/main-page-img3.jpg    1x,
+                    ./images/main-page-img3-2x.jpg 2x
+                  "
+                  src="./images/main-page-img3.jpg"
+                  alt="color scheme"
+                />
+                <p class="activities__text">Design solutions</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="team">
+        <div class="container">
+          <h2 class="title team__title">Our team</h2>
+          <ul class="list team__list">
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/demianenko-1x.jpg 1x,
+                    ./images/demianenko-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/demianenko-tab-1x.jpg 1x,
+                    ./images/demianenko-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/demianenko-mob-1x.jpg 1x,
+                    ./images/demianenko-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/demianenko-mob-1x.jpg"
+                  alt="Igor Demianenko"
+                />
+              </picture>
+              <h3 class="team__name">Igor Demianenko</h3>
+              <p class="team__text">Product Designer</p>
+              <ul class="list team__soc">
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="./images/repina-1x.jpg 1x, ./images/repina-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/repina-tab-1x.jpg 1x,
+                    ./images/repina-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/repina-mob-1x.jpg 1x,
+                    ./images/repina-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/repina-mob-1x.jpg" alt="Olga Repina" />
+              </picture>
+              <h3 class="team__name">Olga Repina</h3>
+              <p class="team__text">Frontend Developer</p>
+              <ul class="list team__soc">
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/tarasov-1x.jpg 1x,
+                    ./images/tarasov-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tarasov-tab-1x.jpg 1x,
+                    ./images/tarasov-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/tarasov-mob-1x.jpg 1x,
+                    ./images/tarasov-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/tarasov-mob-1x.jpg" alt="Mykola Tarasov" />
+              </picture>
+              <h3 class="team__name">Mykola Tarasov</h3>
+              <p class="team__text">Marketing</p>
+              <ul class="list team__soc">
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="team__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/ermakov-1x.jpg 1x,
+                    ./images/ermakov-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ermakov-tab-1x.jpg 1x,
+                    ./images/ermakov-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ermakov-mob-1x.jpg 1x,
+                    ./images/ermakov-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/ermakov-mob-1x.jpg"
+                  alt="Mykhailo Yermakov"
+                />
+              </picture>
+              <h3 class="team__name">Mykhailo Yermakov</h3>
+              <p class="team__text">UI Designer</p>
+              <ul class="list team__soc">
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="link team__link">
+                    <svg class="team__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="customer">
+        <div class="container">
+          <h2 class="title customer__title">Our regular customers</h2>
+          <ul class="list customer__list">
+            <li class="customer__item">
+              <a href="" class="link customer__link">
+                <svg class="customer__logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-yanco"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer__item">
+              <a href="" class="link customer__link">
+                <svg class="customer__logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-tagline"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer__item">
+              <a href="" class="link customer__link">
+                <svg class="customer__logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-company"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer__item">
+              <a href="" class="link customer__link">
+                <svg class="customer__logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-foster-peters"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer__item">
+              <a href="" class="link customer__link">
+                <svg class="customer__logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer__item">
+              <a href="" class="link customer__link">
+                <svg class="customer__logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-company-tagline"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__contacts-wrap">
+          <!-- prettier-ignore -->
+          <a lang="en" href="./index.html" class="link logo footer__logo">
+							<span class="header__logo--blue">Web</span><span>Studio</span>
 					</a>
 
-					<nav class="navigation">
-						<ul class="list navigation__list">
-							<li class="navigation__item">
-								<a href="./index.html" class="link current navigation__link">Studio</a>
-							</li>
-							<li class="navigation__item">
-								<a href="./portfolio.html" class="link navigation__link">Portfolio</a>
-							</li>
-							<li class="navigation__item">
-								<a href="" class="link navigation__link">Contacts</a>
-							</li>
-						</ul>
-					</nav>
+          <!-- Contacts -->
+          <h2 class="visually-hidden">Contacts</h2>
+          <address class="address">
+            <ul class="list contacts-list contacts-footer-list">
+              <li class="contacts-footer-list__item">
+                <a
+                  class="link contacts-footer-list__adress"
+                  href="https://goo.gl/maps/21FP2kessVp6qN1R9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Kyiv, Lesi Ukrainky Blvd, 26
+                </a>
+              </li>
+              <li class="contacts-footer-list__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="link contacts-footer-list__link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contacts-footer-list__item">
+                <a
+                  href="tel:+380991111111"
+                  class="link contacts-footer-list__link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
 
-					<ul class="list contacts-list">
-						<li class="contacts-list__item"><a href="mailto:info@devstudio.com" class="link contacts-list__link">
-							<svg class="mail contacts-list__icon">
-								<use href="./images/icons.svg#icon-envelope" width="16" height="12"></use>
-							</svg>
-						info@devstudio.com</a></li>
-						<li class="contacts-list__item"><a href="tel:+380961111111" class="link contacts-list__link">
-							<svg class="phone contacts-list__icon">
-								<use href="./images/icons.svg#icon-smartphone" width="10" height="16"></use>
-							</svg>
-						+38 096 111 11 11</a></li>
-					</ul>
-					<button class="menu-open" type="button" arial-label="open mob menu" data-menu-open>
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span>
-					</button>
-				</div>
-			</div>
-			<div class="mob-menu is-hidden" data-menu>
-				<div class="container">
-					<div class="mob-menu-top">
-						<button class="menu-close" type="button" data-menu-close>
-							<svg class="menu-close__btn">
-								<use href="./images/icons.svg#icon-close-mob-menu" width="40" height="40"></use>
-							</svg>
-						</button>
-						<nav class="mob-menu__nav">
-							<ul class="list mob-menu__list">
-								<li class="mob-menu__item">
-									<a href="./index.html" class="link current mob-menu__link">Studio</a>
-								</li>
-								<li class="mob-menu__item">
-									<a href="./portfolio.html" class="link mob-menu__link">Portfolio</a>
-								</li>
-								<li class="mob-menu__item">
-									<a href="" class="link mob-menu__link">Contacts</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="mob-menu-bottom">
-						<ul class="list mob-contacts-list">
-							<li class="mob-contacts-list__item"><a href="mailto:info@devstudio.com" class="link mob-contacts-list__link">
-							info@devstudio.com</a></li>
-							<li class="mob-contacts-list__item"><a href="tel:+380961111111" class="link mob-contacts-list__link">
-							+38 096 111 11 11</a></li>
-						</ul>
-						<ul class="list mob-soc-list">
-							<li class="mob-soc-list__item">
-								<a 
-									href="" 
-									target="_blank" 
-									rel="noopener noreferrer nofollow"
-									class="link mob-soc-list__link"
-									>Instagram</a>
-							</li>
-							<li class="mob-soc-list__item">
-								<a 
-									href="" 
-									target="_blank" 
-									rel="noopener noreferrer nofollow"
-									class="link mob-soc-list__link"
-									>Twitter</a>
-							</li>
-							<li class="mob-soc-list__item">
-								<a 
-									href="" 
-									target="_blank" 
-									rel="noopener noreferrer nofollow"
-									class="link mob-soc-list__link"
-									>Facebook</a>
-							</li>
-							<li class="mob-soc-list__item">
-								<a 
-									href="" 
-									target="_blank" 
-									rel="noopener noreferrer nofollow"
-									class="link mob-soc-list__link"
-									>LinkedIn</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
+        <div class="join">
+          <h2 class="title join__title">Join us</h2>
+          <ul class="list join__list">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-		<main>
-			<section class="hero">
-				<div class="container">
-					<h1 class="hero__title">Effective solutions for your business</h1>
-					<button type="button" class="btn hero__btn" data-modal-open>Service order</button>
-				</div>
-			</section>
+        <div class="subscribe">
+          <p class="title subscribe__title">Subscribe</p>
+          <form class="subscribe__form">
+            <input
+              type="text"
+              class="subscribe__input"
+              name="subscribe-mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn subscribe__btn">
+              Subscribe
+              <svg class="subscribe__icon">
+                <use
+                  href="./images/icons.svg#icon-send"
+                  width="24"
+                  height="24"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
 
-			<!-- Values -->
-			<section class="value">
-				<div class="container">
-					<h2 class="visually-hidden">Values</h2>
-					<ul class="value__list list">
-						<li class="value__item antenna">
-							<h4 class="value__name">Attention to details</h4>
-							<p class="value__text">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis repellendus et nobis. Sed delectus quis reiciendis.
-							</p>
-						</li>
-						<li class="value__item clock">
-							<h4 class="value__name">Punctuality</h4>
-							<p class="value__text">
-								Facilis dolores ipsam ea sapiente aut saepe. Doloremque quis aut laborum magnam voluptatem laudantium?
-							</p>
-						</li>
-						<li class="value__item diagram">
-							<h4 class="value__name">Planing</h4>
-							<p class="value__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis totam facere cum fugit.</p>
-						</li>
-						<li class="value__item astronaut">
-							<h4 class="value__name">Modern technology</h4>
-							<p class="value__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum fugiat suscipit eveniet quod!</p>
-						</li>
-					</ul>
-				</div>
-			</section>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__close-icon">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="18"
+              height="18"
+            ></use>
+          </svg>
+        </button>
+        <p class="modal__title">Leave your details, we will call you back</p>
+        <form class="modal__form">
+          <ul class="list modal__list">
+            <li class="modal__field">
+              <label for="user-name" class="modal__label">Name</label>
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  class="modal__input"
+                  name="user-name"
+                  id="user-name"
+                  required
+                />
+                <svg class="modal__input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
+            </li>
 
-			<!-- Activities -->
-			<section class="activities">
-				<div class="container">
-					<h2 class="title activities__title">Our activities</h2>
-					<ul class="list activities__list">
-						<li class="activities__item">
-							<div class="activities__wrap">
-								<img 
-									srcset="./images/main-page-img1.jpg 1x, ./images/main-page-img1-2x.jpg 2x"
-									src="./images/main-page-img1.jpg" 
-									alt="Keyboadr and iPad" 
-								/>
-								<p class="activities__text">Desctop apps</p>
-							</div>
-						</li>
-						<li class="activities__item">
-							<div class="activities__wrap">
-								<img 
-									srcset="./images/main-page-img2.jpg 1x, ./images/main-page-img2-2x.jpg 2x"
-									src="./images/main-page-img2.jpg" 
-									alt="iPhone and design" 
-								/>
-								<p class="activities__text">Mobile apps</p>
-							</div>
-						</li>
-						<li class="activities__item">
-							<div class="activities__wrap">
-								<img 
-									srcset="./images/main-page-img3.jpg 1x, ./images/main-page-img3-2x.jpg 2x"
-									src="./images/main-page-img3.jpg" 
-									alt="color scheme" 
-								/>
-								<p class="activities__text">Design solutions</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
+            <li class="modal__field">
+              <label for="user-phone" class="modal__label">Phone</label>
+              <div class="input-wrap">
+                <input
+                  type="tel"
+                  class="modal__input"
+                  name="user-phone"
+                  id="user-phone"
+                  required
+                  value=""
+                  title="+380 (67) 111-11-11"
+                />
+                <svg class="modal__input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </li>
 
-			<!-- Team -->
-			<section class="team">
-				<div class="container">
-				<h2 class="title team__title">Our team</h2>
-				<ul class="list team__list">
-					<li class="team__item">
-						<picture>
-							<source 
-								srcset="./images/demianenko-1x.jpg 1x, ./images/demianenko-2x.jpg 2x" 
-								media="(min-width: 1200px)" 
-							/>
-							<source 
-								srcset="./images/demianenko-tab-1x.jpg 1x, ./images/demianenko-tab-2x.jpg 2x" 
-								media="(min-width: 768px)" 
-							/>
-							<source 
-								srcset="./images/demianenko-mob-1x.jpg 1x, ./images/demianenko-mob-2x.jpg 2x" 
-								media="(max-width: 767px)" 
-							/>
-							<img 
-								src="./images/demianenko-mob-1x.jpg" 
-								alt="Igor Demianenko" />
-						</picture>
-						<h3 class="team__name">Igor Demianenko</h3>
-						<p class="team__text">Product Designer</p>
-						<ul class="list team__soc">
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a></li>
-						</ul>
-					</li>
-					<li class="team__item">
-						<picture>
-							<source 
-								srcset="./images/repina-1x.jpg 1x, ./images/repina-2x.jpg 2x" 
-								media="(min-width: 1200px)" 
-							/>
-							<source 
-								srcset="./images/repina-tab-1x.jpg 1x, ./images/repina-tab-2x.jpg 2x" 
-								media="(min-width: 768px)" 
-							/>
-							<source 
-								srcset="./images/repina-mob-1x.jpg 1x, ./images/repina-mob-2x.jpg 2x" 
-								media="(max-width: 767px)" 
-							/>
-							<img 
-								src="./images/repina-mob-1x.jpg" 
-								alt="Olga Repina" />
-						</picture>
-						<h3 class="team__name">Olga Repina</h3>
-						<p class="team__text">Frontend Developer</p>
-						<ul class="list team__soc">
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a></li>
-						</ul>
-					</li>
-					<li class="team__item">
-						<picture>
-							<source 
-								srcset="./images/tarasov-1x.jpg 1x, ./images/tarasov-2x.jpg 2x" 
-								media="(min-width: 1200px)" 
-							/>
-							<source 
-								srcset="./images/tarasov-tab-1x.jpg 1x, ./images/tarasov-tab-2x.jpg 2x" 
-								media="(min-width: 768px)" 
-							/>
-							<source 
-								srcset="./images/tarasov-mob-1x.jpg 1x, ./images/tarasov-mob-2x.jpg 2x" 
-								media="(max-width: 767px)" 
-							/>
-							<img 
-								src="./images/tarasov-mob-1x.jpg" 
-								alt="Mykola Tarasov" />
-						</picture>
-						<h3 class="team__name">Mykola Tarasov</h3>
-						<p class="team__text">Marketing</p>
-						<ul class="list team__soc">
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a></li>
-						</ul>
-					</li>
-					<li class="team__item">
-						<picture>
-							<source 
-								srcset="./images/ermakov-1x.jpg 1x, ./images/ermakov-2x.jpg 2x" 
-								media="(min-width: 1200px)" 
-							/>
-							<source 
-								srcset="./images/ermakov-tab-1x.jpg 1x, ./images/ermakov-tab-2x.jpg 2x" 
-								media="(min-width: 768px)" 
-							/>
-							<source 
-								srcset="./images/ermakov-mob-1x.jpg 1x, ./images/ermakov-mob-2x.jpg 2x" 
-								media="(max-width: 767px)" 
-							/>
-							<img 
-								src="./images/ermakov-mob-1x.jpg" 
-								alt="Mykhailo Yermakov" />
-						</picture>
-						<h3 class="team__name">Mykhailo Yermakov</h3>
-						<p class="team__text">UI Designer</p>
-						<ul class="list team__soc">
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a></li>
-							<li><a href="" class="link team__link">
-								<svg class="team__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a></li>
-						</ul>
-					</li>
-				</ul>
-				</div>
-			</section>
+            <li class="modal__field">
+              <label for="user-email" class="modal__label">E-mail</label>
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  class="modal__input"
+                  name="user-email"
+                  id="user-email"
+                  required
+                />
+                <svg class="modal__input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
 
-			<section class="customer">
-				<div class="container">
-					<h2 class="title customer__title ">Our regular customers</h2>
-					<ul class="list customer__list">
-						<li class="customer__item">
-							<a href="" class="link customer__link">
-								<svg class="customer__logo" width="106" height="60">
-									<use href="./images/icons.svg#icon-yanco"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="customer__item">
-							<a href="" class="link customer__link">
-								<svg class="customer__logo" width="106" height="60">
-									<use href="./images/icons.svg#icon-tagline"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="customer__item">
-							<a href="" class="link customer__link">
-								<svg class="customer__logo" width="106" height="60">
-									<use href="./images/icons.svg#icon-company"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="customer__item">
-							<a href="" class="link customer__link">
-								<svg class="customer__logo" width="106" height="60">
-									<use href="./images/icons.svg#icon-foster-peters"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="customer__item">
-							<a href="" class="link customer__link">
-								<svg class="customer__logo" width="106" height="60">
-									<use href="./images/icons.svg#icon-brand"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="customer__item">
-							<a href="" class="link customer__link">
-								<svg class="customer__logo" width="106" height="60">
-									<use href="./images/icons.svg#icon-company-tagline"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
+          <div class="comment-wrap">
+            <label for="order-modal-comment" class="modal__label"
+              >Comment</label
+            >
+            <textarea
+              name="order-modal-comment"
+              id="order-modal-comment"
+              class="modal__comment"
+              placeholder="Enter your comment"
+            ></textarea>
+          </div>
 
-		<!-- <footer class="footer">
-			<div class="contacts-wrap">
-				<div class="container">
-					<div class="footer__contacts-wrap"> -->
-						<!-- prettier-ignore -->
-						<!-- <a lang="en" href="./index.html" class="link logo footer__logo">
-							<span class="header__logo--blue">Web</span><span>Studio</span>
-						</a> -->
-						
+          <div class="modal__terms">
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms"
+              class="modal__check visually-hidden"
+              value="true"
+            />
+            <label for="terms" class="modal__check-text">
+              <span>
+                <svg class="modal__check-icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Confirm &nbsp;
+              <a href="" class="link modal__link"
+                >Terms and conditions</a
+              ></label
+            >
+          </div>
 
-						<!-- Contacts -->
-						<!-- <h2 class="visually-hidden">Contacts</h2>
-						<address class="address">
-							<ul class="list contacts-list contacts-footer-list">
-								<li class="contacts-footer-list__item">
-									<a
-											class="link contacts-footer-list__adress"
-											href="https://goo.gl/maps/21FP2kessVp6qN1R9"
-											target="_blank"
-											rel="noopener noreferrer nofollow"
-										>
-											Kyiv, Lesi Ukrainky Blvd, 26
-									</a>
-								</li>
-								<li class="contacts-footer-list__item">
-									<a href="mailto:info@example.com" class="link contacts-footer-list__link">info@example.com</a>
-								</li>
-								<li class="contacts-footer-list__item"><a href="tel:+380991111111" class="link contacts-footer-list__link">+38 099 111 11 11</a></li>
-							</ul>
-						</address>
-					</div>
+          <button type="submit" class="btn modal__send-btn">Send</button>
+        </form>
+      </div>
+    </div>
 
-					<div class="join">
-						<h2 class="title join__title">Join us</h2>
-						<ul class="list join__list">
-							<li class="join__item">
-								<a href="" class="join__link">
-									<svg class="join__icon">
-										<use href="./images/icons.svg#icon-instagram"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="join__item">
-								<a href="" class="join__link">
-									<svg class="join__icon">
-										<use href="./images/icons.svg#icon-twitter"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="join__item">
-								<a href="" class="join__link">
-									<svg class="join__icon">
-										<use href="./images/icons.svg#icon-facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="join__item">
-								<a href="" class="join__link">
-									<svg class="join__icon">
-										<use href="./images/icons.svg#icon-linkedin"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="subscribe">
-						<p class="title subscribe__title">Subscribe</p>
-						<form class="subscribe__form">
-							<input type="text" class="subscribe__input" name="subscribe-mail" placeholder="E-mail"/>
-						<button type="submit" class="btn subscribe__btn">Subscribe
-							<svg class="subscribe__icon">
-								<use href="./images/icons.svg#icon-send" width="24" height="24"></use>
-							</svg>
-						</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</footer> -->
-
-		<!-- <div class="backdrop is-hidden" data-modal>
-			<div class="modal">
-				<button type="button" class="modal__close-btn" data-modal-close>
-					<svg class="modal__close-icon">
-						<use href="./images/icons.svg#icon-close" width="18" height="18"></use>
-					</svg>
-				</button>
-				<p class="modal__title">Leave your details, we will call you back</p>
-				<form class="modal__form">
-					<ul class="list modal__list">
-						<li class="modal__field">
-							<label for="user-name" class="modal__label">Name</label>
-							<div class="input-wrap">
-							<input type="text" class="modal__input" name="user-name" id="user-name" required />
-							<svg class="modal__input-icon" width="18" height="18">
-								<use href="./images/icons.svg#icon-person-black"></use>
-							</svg>
-							</div>
-						</li>
-
-						<li class="modal__field">
-							<label for="user-phone" class="modal__label">Phone</label>
-							<div class="input-wrap">
-							<input type="tel" class="modal__input" name="user-phone" id="user-phone" required value="" title="+380 (67) 111-11-11" />
-							<svg class="modal__input-icon" width="18" height="18">
-								<use href="./images/icons.svg#icon-phone-black"></use>
-							</svg>
-						</div>
-						</li>
-
-						<li class="modal__field">
-							<label for="user-email" class="modal__label">E-mail</label>
-							<div class="input-wrap">
-							<input type="email" class="modal__input" name="user-email" id="user-email" required />
-							<svg class="modal__input-icon" width="18" height="18">
-								<use href="./images/icons.svg#icon-email-black"></use>
-							</svg>
-						</div>
-						</li>
-					</ul>
-
-					<div class="comment-wrap">
-						<label for="order-modal-comment" class="modal__label">Comment</label>
-						<textarea name="order-modal-comment" id="order-modal-comment" class="modal__comment" placeholder="Enter your comment"></textarea>
-					</div>
-
-					<div class="modal__terms">
-						<input type="checkbox" name="terms" id="terms" class="modal__check visually-hidden" value="true"
-						/>
-						<label for="terms" class="modal__check-text">
-							<span>
-								<svg class="modal__check-icon" width="11" height="8">
-									<use href="./images/icons.svg#icon-check"></use>
-								</svg>
-							</span>
-							By clicking on Send, you confirm our&nbsp;
-							<a href="" class="link modal__link">Terms and conditions</a></label>
-					</div>
-
-					<button type="submit" class="btn modal__send-btn">Send</button>
-				</form>
-			</div>
-		</div> -->
-
-		<script src="./js/modal.js"></script>
-		<script src="./js/menu.js"></script>
-		<!-- <script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- <script>
 			(() => {
 				const { height: pageHeaderHeight } = document
 					.querySelector(".page-header")
@@ -586,5 +783,5 @@
 				document.body.style.paddingTop = `${pageHeaderHeight}px`;
 			})();
 		</script> -->
-	</body>
+  </body>
 </html>

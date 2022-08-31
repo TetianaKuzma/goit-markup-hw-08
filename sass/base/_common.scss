@@ -1,19 +1,25 @@
 body {
-	font-family: "Roboto", sans-serif;
-	color: var(--primary-text-color);
-	background-color: var(--primary-bg-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+
+  &.modal-open {
+    overflow: hidden;
+  }
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .list {
-	list-style: none;
+  list-style: none;
 }
 
 .link {
-	text-decoration: none;
+  text-decoration: none;
 
-	&:visited {
-		text-decoration: none;
-	}
+  &:visited {
+    text-decoration: none;
+  }
 }
-
-

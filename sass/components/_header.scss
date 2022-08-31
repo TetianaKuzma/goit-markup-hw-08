@@ -1,32 +1,33 @@
 .header {
-	position: absolute;
-	width: 100%;
-	@include position (fixed, 0, 0, 100%, null);
-	z-index: 100;
+  position: absolute;
+  width: 100%;
+  @include position(fixed, 0, 0, 100%, null);
+  z-index: 10;
 
-	background-color: var(--primary-bg-color);
-	padding-top: 16px;
-	padding-bottom: 16px;
-	border: 1px solid #ECECEC;
+  background-color: var(--primary-bg-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ececec;
 
-	@include tablet {
-		padding-top: 26px;
-		padding-bottom: 26px;
-	}
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-	@include desktop {
-		padding-top: 24px;
-		padding-bottom: 25px;
-	}
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
-	>.container {
-		display: flex;
-		align-items: center;
-		// justify-content: space-between;
-	}
+  > .container {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  }
 }
 
-.header__overlay {
-	display: flex;
-	
+.header-overlay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
