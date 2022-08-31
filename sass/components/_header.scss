@@ -1,14 +1,32 @@
 .header {
+	position: absolute;
+	width: 100%;
 	@include position (fixed, 0, 0, 100%, null);
 	z-index: 100;
 
 	background-color: var(--primary-bg-color);
-	padding-top: 24px;
-	padding-bottom: 25px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	border: 1px solid #ECECEC;
 
-	.container {
+	@include tablet {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+
+	@include desktop {
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+
+	>.container {
 		display: flex;
 		align-items: center;
+		// justify-content: space-between;
 	}
+}
+
+.header__overlay {
+	display: flex;
+	
 }

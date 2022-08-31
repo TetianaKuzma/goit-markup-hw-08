@@ -1,15 +1,41 @@
 .customer {
-	padding: 94px 0;
+	padding: 60px 0;
+
+	@include desktop {
+		padding: 94px 0;
+	}
 }
 
 .customer__title {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	@include font (28px, 700, 1.18, 0.03em);
+
+	@include desktop {
+		@include font (36px, 700, 1.17, 0.03em);
+	}
+
+	@include desktop {
+		margin-bottom: 50px;
+	}
 }
 
 .customer__list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 30px;
+}
+
+.customer__item {
+	width: calc((100% - 30px) / 2);
+
+	@include tablet {
+		width: calc((100% - 60px) / 3);
+	}
+
+	@include desktop {
+		width: calc((100% - 150px) / 6);
+	}
 }
 
 .customer__link {
@@ -17,7 +43,6 @@
 	align-items: center;
 	justify-content: center;
 
-	width: 170px;
 	height: 92px;
 	border: 1px solid #AFB1B8;
 	border-radius: 4px;
