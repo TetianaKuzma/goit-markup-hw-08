@@ -5,6 +5,7 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   overflow: auto;
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -14,7 +15,7 @@
 }
 
 .modal {
-  @include position(absolute, 50%, 50%, 450px, 609px);
+  @include position(absolute, 50%, 50%, inherit, 609px);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
