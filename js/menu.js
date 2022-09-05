@@ -9,12 +9,11 @@
 
   refs.openMenuBtn.addEventListener("click", toggleMenu);
   refs.closeMenuBtn.addEventListener("click", toggleMenu);
-  // refs.menuList.addEventListener("click", removeMenu);
+  refs.menuList.addEventListener("click", removeMenu);
 
   function toggleMenu() {
-    document.body.classList.toggle("menu-open");
+    // document.body.classList.toggle("menu-open");
     refs.menu.classList.toggle("is-hidden");
-    refs.body.classList.toggle("no-scroll");
     refs.body.classList.toggle("no-scroll");
   }
 

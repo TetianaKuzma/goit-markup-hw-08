@@ -56,6 +56,9 @@ body.modal-open {
 body.menu-open {
   overflow: hidden;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 .list {
   list-style: none;
